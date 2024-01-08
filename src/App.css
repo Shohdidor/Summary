@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+.Fon {
+    background-image: url(/img/trava.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+}
+
+.Name{
+    font-family: 'Abril Fatface', serif;
+}

@@ -94,8 +94,8 @@ function App ()  {
     <>
     <div className='flex justify-between overflow-hidden'>
       
-    <div className='dark:bg-[#F7BB0E] bg-[#29282C] sm:w-[50%] w-[50%]'>
-      <img src={Avatar} alt="error" className='sm:rounded-[50%] sm:w-[40%] sm:m-auto sm:pt-[110px] sm:mt-[-15%]' />
+    <div className='dark:bg-[#F7BB0E] bg-[#29282C] sm:w-[100%] w-[50%]'>
+      <img src={Avatar} alt="error" className='sm:rounded-[50%] sm:w-[80%] sm:m-auto sm:pt-[35px] sm:pb-[35px] sm:mt-[-15%]' />
       <Card h1={t("contact.h1")} li1={t("contact.li1")} li2={t("contact.li2")} li3={t("contact.li3")} li4={t("contact.li4")} li5={t("contact.li5")} li6={t("contact.li6")} li7={t("contact.li7")} li8={t("contact.li8")}  />
       <hr className='border-white'/>
         <h1 className='animate__animated animate__fadeInUp text-teal-600 font-bold text-[24px] text-center'>
@@ -173,12 +173,12 @@ function App ()  {
     </div>
     <div className='sm:pr-[660px]'>
       
-    <div className='dark:bg-[#29282C] text-black dark:text-white h-auto flex gap-[50px] mt-[10px] justify-between pr-[10px]'>
+    <div className='dark:bg-[#29282C] text-black dark:text-white h-auto flex gap-[50px] mt-[10px] justify-between pr-[10px] sm:pr-[70px] sm:pl-[1 0px]'>
       <Switcher />
       
 
       <FormControl >
-        <InputLabel id="demo-simple-select-label" className='dark:text-orange-500'>Age</InputLabel>
+        <InputLabel id="demo-simple-select-label" className='dark:text-orange-500'>Lng</InputLabel>
         <Select error
         value={lng}
         size='small'
@@ -206,9 +206,9 @@ function App ()  {
       
     </div>
 
-    <div className='animate__animated animate__fadeInUp sm:w-[270%]'>
+    <div className='animate__animated animate__fadeInUp sm:w-[100%] sm:mb-[10px] sm:mt-[-8px]'>
     <hr className='border-white'/>
-        <h1 className='text-teal-600 font-bold text-[24px] text-center'>
+        <h1 className='text-teal-600 font-bold text-[24px] text-center sm:pt-[5px] sm:pb-[4px]'>
             {t("Exprience")}
         </h1>
         <hr className='border-white' />
@@ -216,27 +216,23 @@ function App ()  {
       <Card2 li1={t("1 year")} li2={t("1 mounth")} li3={t("3 mounth")} li4={t("2 mounth")} li5={t("Cpp")} li6={t("HTML")} li7={t("JS")} li8={t("React")}  />
     
     </div>
+    <br />
 
 
-    <div className='animate__animated animate__fadeInUp mt-[48px] sm:mt-[-1px] sm:w-[270%]'>
+    <div className='animate__animated animate__fadeInUp mt-[48px] sm:mt-[-1px] sm:w-[100%]'>
     <hr className='border-white'/>
         <h1 className='text-teal-600 font-bold text-[24px] text-center'>
             {t("GIT HUB")}
         </h1>
         <hr className='border-white' />
     </div>
-    <Swiper navigation={true} modules={[Navigation]} className="mySwiper hidden sm:flex">
-        <SwiperSlide>
+    
+    <div className='hidden sm:flex'>
         <Card3 img={Shop} h1={t("online store")} a={"https://github.com/Shohdidor/Internet-Magaz"}/>
-        </SwiperSlide>
-        <SwiperSlide>
         <Card3 img={Todo} h1={t("TodoList")} a={"https://github.com/Shohdidor/Table"} />
-        </SwiperSlide>
-        <SwiperSlide>
         <Card3 img={Slide} h1={t("Slider")} a={"https://github.com/Shohdidor/Slider"} />
-        </SwiperSlide>
-      </Swiper>
-
+    </div>
+    
       <div className='sm:hidden'>
     <Card3 img={Shop} h1={t("online store")} a={"https://github.com/Shohdidor/Internet-Magaz"}/>
     <Card3 img={Todo} h1={t("TodoList")} a={"https://github.com/Shohdidor/Table"} />
@@ -246,7 +242,7 @@ function App ()  {
 
 
     </div>
-    <Modal
+     <Modal
         open={open}
         onClose={handleClose}
         aria-labelledby="modal-modal-title"
